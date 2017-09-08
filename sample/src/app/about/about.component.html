@@ -1,0 +1,26 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">About</div>
+  <div class="panel-body">
+    <p>
+      about works!
+    </p>
+    {{message}}
+
+    <h2>Cars</h2>
+    <div *ngFor="let car of carList">
+      <div class= "row">
+      <div class="col-md-3">{{car.carName}}</div>
+      <div class="col-md-3">{{car.colour}}</div>
+    </div>
+    </div>
+
+    <h2>Bikes</h2>
+    <div *ngFor="let bike of bikeList">
+      <div class= "row">
+      <div class="col-md-3">{{bike.bikeName}}</div>
+      <div class="col-md-3">{{bike.colour}}</div>
+    </div>
+    </div>
+
+  </div>
+</div>
